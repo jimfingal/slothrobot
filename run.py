@@ -69,10 +69,6 @@ if __name__ == "__main__":
 
     r = redis.from_url(redis_url)
     
-    print consumer_key
-    print consumer_secret
-    print access_token
-    print access_token_secret
     twitter = Twython(consumer_key,
                   consumer_secret,
                   access_token,
