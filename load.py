@@ -2,11 +2,8 @@ import os
 import redis 
 import re
 
-
-
 app_name = "SLOTHROBOT"
 redis_collection = 'txt'
-
 
 def get_text():
     read_data = None
