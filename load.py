@@ -4,6 +4,7 @@ import re
 
 app_name = "SLOTHROBOT"
 redis_collection = 'txt'
+redis_url = os.getenv(app_name + '_REDIS_URL', 'redis://localhost:6379')
 
 def get_text():
     read_data = None
@@ -16,7 +17,6 @@ def get_text():
     return no_space
 
 if __name__ == "__main__":
-    redis_url = os.getenv(app_name + '_REDIS_URL', 'redis://localhost:6379')
 
     r = redis.from_url(redis_url)
 
